@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Screen App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #screen-one, #screen-two {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style1.css" id="style1">
+    <link rel="stylesheet" href="style2.css" id="style2" disabled>
+</head>
+<body>
+    <div>
+        <button onclick="showScreen('screen-one')">Screen One</button>
+        <button onclick="showScreen('screen-two')">Screen Two</button>
+    </div>
+    <div id="screen-one">
+        <div class="banner">
+            <div class="slider" style="--quantity: 10">
+                <div class="item" style="--position: 1"><img src="images/dragon_1.jpg" alt=""></div>
+                <div class="item" style="--position: 2"><img src="images/dragon_2.jpg" alt=""></div>
+                <div class="item" style="--position: 3"><img src="images/dragon_3.jpg" alt=""></div>
+                <div class="item" style="--position: 4"><img src="images/dragon_4.jpg" alt=""></div>
+                <div class="item" style="--position: 5"><img src="images/dragon_5.jpg" alt=""></div>
+                <div class="item" style="--position: 6"><img src="images/dragon_6.jpg" alt=""></div>
+                <div class="item" style="--position: 7"><img src="images/dragon_7.jpg" alt=""></div>
+                <div class="item" style="--position: 8"><img src="images/dragon_8.jpg" alt=""></div>
+                <div class="item" style="--position: 9"><img src="images/dragon_9.jpg" alt=""></div>
+                <div class="item" style="--position: 10"><img src="images/dragon_10.jpg" alt=""></div>
+            </div>
+            <div class="content">
+                <h1 data-content="レオ">レオ</h1>
+                <!-- <div class="author">
+                    <h2>LUN DEV</h2>
+                    <p><b>Web Design</b></p>
+                    <p>Subscribe to the channel to watch many interesting videos</p>
+                </div> -->
+                <div class="model"></div>
+            </div>
+        </div>
+    </div>
+    <div id="screen-two">
+        <header>
+            <nav>
+                <a href="">Home</a>
+                <a href="">Contacts</a>
+                <a href="">Info</a>
+            </nav>
+        </header>
+    
+        <!-- carousel -->
+        <div class="carousel">
+            <!-- list item -->
+            <div class="list">
+                <div class="item">
+                    <img src="images/img1.jpg">
+                    <div class="content">
+                        <div class="author">LUNDEV</div>
+                        <div class="title">DESIGN SLIDER</div>
+                        <div class="topic">ANIMAL</div>
+                        <div class="des">
+                            <!-- lorem 50 -->
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                        </div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/img2.jpg">
+                    <div class="content">
+                        <div class="author">LUNDEV</div>
+                        <div class="title">DESIGN SLIDER</div>
+                        <div class="topic">ANIMAL</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                        </div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/img3.jpg">
+                    <div class="content">
+                        <div class="author">LUNDEV</div>
+                        <div class="title">DESIGN SLIDER</div>
+                        <div class="topic">ANIMAL</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                        </div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/img4.jpg">
+                    <div class="content">
+                        <div class="author">LUNDEV</div>
+                        <div class="title">DESIGN SLIDER</div>
+                        <div class="topic">ANIMAL</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                        </div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- list thumnail -->
+            <div class="thumbnail">
+                <div class="item">
+                    <img src="images/img11.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Name Slider
+                        </div>
+                        <div class="description">
+                            Description
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/img22.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Name Slider
+                        </div>
+                        <div class="description">
+                            Description
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/img33.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Name Slider
+                        </div>
+                        <div class="description">
+                            Description
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/img44.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Name Slider
+                        </div>
+                        <div class="description">
+                            Description
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- next prev -->
+    
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <!-- time running -->
+            <div class="time"></div>
+        </div>
+    
+        <script src="app.js"></script>
+    </body>
+    </div>
+    <script src="app1.js" id="app1"></script>
+    <script src="app2.js" id="app2" defer></script>
+    <script>
+        function showScreen(screenId) {
+            document.getElementById('screen-one').style.display = 'none';
+            document.getElementById('screen-two').style.display = 'none';
+            document.getElementById(screenId).style.display = 'block';
+            if (screenId === 'screen-one') {
+                document.getElementById('style1').disabled = false;
+                document.getElementById('style2').disabled = true;
+                document.getElementById('app1').defer = false;
+                document.getElementById('app2').defer = true;
+            } else {
+                document.getElementById('style1').disabled = true;
+                document.getElementById('style2').disabled = false;
+                document.getElementById('app1').defer = true;
+                document.getElementById('app2').defer = false;
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            showScreen('screen-one');
+        });
+    </script>
+</body>
+</html>
